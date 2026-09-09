@@ -103,6 +103,7 @@
             android:name="com.fsck.k9.activity.MessageHomeActivity"
             android:launchMode="singleTop"
             android:exported="true"
+            android:permission="net.thunderbird.android.permission.LAUNCH_MESSAGE_HOME"
             >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -326,6 +327,11 @@
                     android:host="${applicationId}"
                     />
             </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
+t-filter>
         </activity>
 
     </application>
