@@ -42,6 +42,7 @@ fun NamedDomainObjectContainer<out ApkSigningConfig>.createSigningConfig(
             storePassword = properties.getSigningProperty(signingType, PROPERTY_STORE_PASSWORD)
             keyAlias = properties.getSigningProperty(signingType, PROPERTY_KEY_ALIAS)
             keyPassword = properties.getSigningProperty(signingType, PROPERTY_KEY_PASSWORD)
+            enableV1Signing = false
         }
     } else {
         project.logger.warn("Signing config not created for ${signingType.type}")
