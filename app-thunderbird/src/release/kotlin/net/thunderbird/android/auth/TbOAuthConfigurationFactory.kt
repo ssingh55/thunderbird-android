@@ -23,7 +23,7 @@ class TbOAuthConfigurationFactory : OAuthConfigurationFactory {
             "imap.aol.com",
             "smtp.aol.com",
         ) to OAuthConfiguration(
-            clientId = "dj0yJmk9QTVYM0I0RGQ0VDFBJmQ9WVdrOVNYcFphVWRVYVhnbWNHbzlNQT09JnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTA1",
+            clientId = "", // The consumer secret must be handled by the backend
             scopes = listOf("mail-w"),
             authorizationEndpoint = "https://api.login.aol.com/oauth2/request_auth",
             tokenEndpoint = "https://api.login.aol.com/oauth2/get_token",
@@ -85,7 +85,7 @@ class TbOAuthConfigurationFactory : OAuthConfigurationFactory {
             "imap.mail.yahoo.com",
             "smtp.mail.yahoo.com",
         ) to OAuthConfiguration(
-            clientId = "dj0yJmk9SW1VbkV0R0FJYU1mJmQ9WVdrOU1Hc3dlSEp3YzNFbWNHbzlNQT09JnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PWNk",
+            clientId = "", // The consumer secret must be handled by the backend
             scopes = listOf("mail-w"),
             authorizationEndpoint = "https://api.login.yahoo.com/oauth2/request_auth",
             tokenEndpoint = "https://api.login.yahoo.com/oauth2/get_token",
