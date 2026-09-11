@@ -32,6 +32,11 @@
         tools:ignore="ProtectedPermissions"
         />
 
+    <permission
+        android:name="${applicationId}.permission.LAUNCH_MESSAGE_HOME"
+        android:protectionLevel="signature"
+        />
+
     <application
         android:allowTaskReparenting="false"
         android:resizeableActivity="true"
@@ -103,6 +108,7 @@
             android:name="com.fsck.k9.activity.MessageHomeActivity"
             android:launchMode="singleTop"
             android:exported="true"
+            android:permission="${applicationId}.permission.LAUNCH_MESSAGE_HOME"
             >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
