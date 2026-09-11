@@ -4,10 +4,9 @@
     tools:ignore="InsecureBaseConfiguration,AcceptsUserCertificates"
     >
 
-    <base-config cleartextTrafficPermitted="true">
+    <base-config cleartextTrafficPermitted="false">
         <trust-anchors>
             <certificates src="system" />
-            <certificates src="user" />
         </trust-anchors>
     </base-config>
 
